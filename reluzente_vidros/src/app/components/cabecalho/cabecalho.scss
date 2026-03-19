@@ -1,0 +1,31 @@
+.header {
+  background: var( --cor-fundo);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px var(--cor-box_shadow);
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 15px;
+  }
+
+  .logo {
+   margin-left: 25px;
+  
+   }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 500;
+       border-bottom: 2px ;
+    }
+  }
+}

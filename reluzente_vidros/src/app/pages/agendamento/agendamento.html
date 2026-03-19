@@ -1,0 +1,118 @@
+<div class="form-container">
+  <h2 class="title">Solicitar Orçamento</h2>
+
+  <form #orcamentoForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <!-- Nome -->
+    <div class="campo">
+      <label class="label-name" for="nome">Nome completo :</label>
+      <input class="input"
+        id="nome"
+        name="nome"
+        type="text"
+        [(ngModel)]="form.nome"
+        required
+        placeholder="Seu nome"
+      />
+    </div>
+
+    <!-- Email -->
+    <div class="campo">
+      <label class="label-email" for="email">E-mail :</label>
+      <input class="input"
+        id="email"
+        name="email"
+        type="email"
+        [(ngModel)]="form.email"
+        required
+        placeholder="seu@email.com"
+      />
+    </div>
+
+    <!-- Telefone -->
+    <div class="campo">
+      <label class="label-telefone" for="telefone">Telefone :</label>
+      <input class="input"
+        id="telefone"
+        name="telefone"
+        type="tel"
+        [(ngModel)]="form.telefone"
+        required
+        placeholder="(11) 99999-9999"
+      />
+    </div>
+
+    <!-- Endereço -->
+    <div class="campo">
+      <label class="label-endereco" for="endereco">Endereço :</label>
+      <input class="input"
+        id="endereco"
+        name="endereco"
+        type="text"
+        [(ngModel)]="form.endereco"
+        placeholder="Rua, número, bairro, cidade"
+      />
+    </div>
+
+    <!-- Produtos -->
+    <div class="campo">
+      <label class="label-produto">Produto desejado </label>
+      <div class="checkboxes">
+        <label class="label-produtos">
+          <input
+            type="checkbox"
+            name="boxBanheiro"
+            [(ngModel)]="form.produtos.boxBanheiro"
+          />
+          Box de Banheiro
+        </label>
+        <label class="label-produtos">
+          <input
+            type="checkbox"
+            name="janela"
+            [(ngModel)]="form.produtos.janela"
+          />
+          Janela
+        </label>
+        <label class="label-produtos">
+          <input class="input-produto"
+            type="checkbox"
+            name="sacada"
+            [(ngModel)]="form.produtos.sacada"
+          />
+          Sacada
+        </label>
+      </div>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="campo">
+      <label class="label-whatsapp">Podemos entrar em contato via WhatsApp? </label>
+      <div class="radios">
+        <label class="option-whatsapp">
+          <input class="input-whatsapp"
+            type="radio"
+            name="aceitaWhatsapp"
+            [(ngModel)]="form.aceitaWhatsapp"
+            [value]="true"
+          />
+          Sim
+        </label>
+        <label class="option-whatsapp">
+          <input
+            type="radio"
+            name="aceitaWhatsapp"
+            [(ngModel)]="form.aceitaWhatsapp"
+            [value]="false"
+          />
+          Não
+        </label>
+      </div>
+    </div>
+
+    <button  class="button" type="submit" [disabled]="orcamentoForm.invalid">
+      Enviar Solicitação
+    </button>
+
+  </form>
+</div>

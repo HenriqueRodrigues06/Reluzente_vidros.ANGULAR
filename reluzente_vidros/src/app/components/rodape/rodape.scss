@@ -1,0 +1,155 @@
+  .title_footer{
+
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: #199d5e; 
+    font-size: clamp(2.0rem, 2.1rem, 3.0rem);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    line-height: 0.2;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* ── FOOTER -- arrumar as configuraçoes de posicionamento,pois está dando conflito com algum outro comando -- ── */
+footer {
+  padding: 1rem;
+  background: #ffffff; /* defina a cor real que quer aqui */
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+}
+
+.footer-brand-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.footer-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  opacity: 0.48;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.68;
+}
+
+.zap-img {
+  width: 30px;
+  height: 30px;
+}
+
+.facebook-img {
+  width: 30px;
+  height: 30px;
+}
+
+.instagram-img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-col-title {
+ 
+  font-size: 0.95rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 0.83rem;
+  opacity: 0.48;
+  transition: opacity 0.3s, color 0.3s;
+   color: var( --cor-pillar-and-fonte);
+}
+
+.footer-links a:hover { opacity: 1;  }
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+ color: var( --cor-pillar-and-fonte);
+
+}
+
+.footer-contact-label {
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.48;
+}
+
+.footer-contact-value {
+  font-size: 0.83rem;
+  opacity: 0.48;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+}
+
+
+.footer-legal {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1400px;
+ 
+}
+
+.footer-legal a {
+  text-decoration: none;
+  font-size: 0.82rem;
+  opacity: 0.58;
+  transition: opacity 0.90s;
+  color: var( --cor-pillar-and-fonte);
+
+}
+.footer-copy {
+  font-size: 0.82rem;
+  opacity: 0.58;
+  letter-spacing: 0.05em;
+  letter-spacing: 0.2em;
+}
+
+.footer-copy p {
+  display: flex;
+  justify-content: center;
+  color: var( --cor-pillar-and-fonte);
+  }
+
+
